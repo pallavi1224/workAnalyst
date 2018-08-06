@@ -1,14 +1,15 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
+    font-size: 16px;
 }
 
-header{
+header {
     height: 550px;
-    width:100%;
+    width: 100%;
     background: url('images/header.png')no-repeat center center fixed;
-    background-size:cover;
-    background-color: rgba(0,0,0,0.7);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
 }
 
@@ -16,23 +17,63 @@ header{
     border-radius: 30px;
 }
 
-.custom-nav{
-    background-color: rgba(0,0,0,0.0)!important;
+.custom-nav {
+    background-color: rgba(0, 0, 0, 0.0) !important;
     box-shadow: 0 0 10px rgba(0, 0, 0, .6);
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .6);
 }
 
-footer{
+footer {
     background: url('images/degree.png')no-repeat center center fixed;
-    background-size:cover;
-    background-color: rgba(0,0,0,0.7);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
 }
 
-footer .dropdown-item:focus, .dropdown-item:hover{
-    background-color: transparent!important;
+#intro span {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-footer hr{
+#intro p {
+    color: black;
+}
+
+#courses{
+    background: url('images/courses.jpg')no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+
+#courses .card{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)!important;
+}
+
+#courses .card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8)!important;
+}
+
+#courses .card-body img{
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5)!important;
+    border-radius: 5px;
+}
+
+
+#courses .card-header .card-footer{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)!important;
+}
+
+footer .dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: transparent !important;
+}
+
+footer hr {
     background-color: white;
+}
+
+.shrink{
+    background: #2c3e50!important;
 }
