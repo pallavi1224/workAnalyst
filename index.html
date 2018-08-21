@@ -7,262 +7,396 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" />
     <link rel="stylesheet" href="main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>'I' Analyst</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top custom-nav custom-nav1">
-        <a class="navbar-brand" href="#"><img src="images/I_anaiyst_logo.png"></a>
+        <a class="navbar-brand" href="index.html"><img src="images/I_anaiyst_logo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto" id="navScrollspy">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#Home">Home<span class="sr-only"></span></a>
+                    <a class="nav-link" href="index.html">Home<span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="index.html#courses" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Courses
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Data Science</a>
-                        <a class="dropdown-item" href="#">Machine Learning</a>
-                        <a class="dropdown-item" href="#">Business Analytics</a>
-                        <a class="dropdown-item" href="#">Marketing Analytics</a>
-                        <a class="dropdown-item" href="#">Statistical Analysis(R,SAS)</a>
-                        <a class="dropdown-item" href="#">Programming (R,SAS)</a>
+                        <a class="dropdown-item" href="data.html">Data Analytics</a>
+                        <a class="dropdown-item" href="data_science.html">Data Science</a>
+                        <a class="dropdown-item" href="Machine.html">Machine Learning</a>
+                        <a class="dropdown-item" href="business.html">Business Analytics</a>
+                        <a class="dropdown-item" href="Marketing.html">Marketing Analytics</a>
+<!--                        <a class="dropdown-item" href="Statistical.html">Statistical Analysis(R,SAS)</a>-->
+                        <a class="dropdown-item" href="r.html">R Programming</a>
+                        <a class="dropdown-item" href="sas.html">SAS Programming</a>
+                        <a class="dropdown-item" href="pythan.html">Python</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#circle_section">About US</a>
+                    <a class="nav-link" href="about.html">About US</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#shop">Contact US</a>
+                    <a class="nav-link" href="contact.html">Contact US</a>
                 </li>
             </ul>
         </div>
     </nav>
     <header id="Home">
-        <div class="container">
-            <div class="row py-4">
-                <div class="col-md-12 text-center text-white pt-5">
-                    <h1 class="display-3 pt-5"><span class="text-warning">I</span> Analyst</h1>
-                    <h4>Analytics services and Certificate, Diploma training</h4>
-                    <p class="p-3">We are a private institute providing training and consulting, especially related to ‘Analytics’. We conduct corporate training's and public programs. The content we have is based on current needs of job market and trends.</p>
-                    <div class="header-link"> <a href="#" class="btn btn-outline-primary btn-lg mr-5">Click here for Demo</a> </div>
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="container">
+                <div class="row py-4 py-xs-0 py-sm-0">
+                    <div class="col-md-12 text-center text-white pt-5">
+                        <h1 class="display-3 pt-5"><span class="text-warning"><sup><i class="h4 fas fa-quote-left"></i>
+</sup><strong>I </strong><sup><i class="h4 fas fa-quote-right"></i></sup></span> Analyst</h1>
+                        <h4>Analytics services and Certificate, Diploma training</h4>
+                        <p class="p-3">We are a private institute providing training and consulting, especially related to ‘Analytics’. We conduct corporate training's and public programs. The content we have is based on current needs of job market and trends.</p>
+                        <div class="header-link"> <a href="#exampleModal" class="btn btn-outline-primary btn-lg mr-5" data-toggle="modal">Register for Demo Class</a> </div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
     <section id="intro">
-        <div class="row text-center py-5">
-            <div class="col-md-3">
-                <img src="images/R.png">
-                <span class="text-primary p-2">R</span>
-                <p>
-                    R is a free software environment for statistical computing & graphics. It compiles and runs on a wide variety of UNIX platforms, Windows and MacOS. R is a language & environment for statistical computing & graphics.
-                </p>
-            </div>
-            <div class="col-md-3">
-                <img src="images/azur.png">
-                <span class="text-primary p-2">Azur ML Studio</span>
-                <p>
-                    To develop a predictive analysis model, you typically use data from one or more sources, transform & analyze that data through various data manipulation, statistical functions & generate a set of results
-                </p>
-            </div>
-            <div class="col-md-3">
-                <img src="images/rapid.png">
-                <span class="text-primary p-2">Rapid Miner</span>
-                <p>
-                    RapidMiner Studio is a powerful visual design environment for rapidly building complete predictive analytic workflows. This all-in-one tool features hundreds of pre-defined data preparation & machine learning algorithms.
-                </p>
-            </div>
-            <div class="col-md-3">
-                <img src="images/sas_icon.png">
-                <span class="text-primary p-2">SAS</span>
-                <p>
-                    Statistical Analysis System is a software suite developed by SAS Institute for advanced analytics, multivariate analyses, business intelligence, data management, and predictive analytics. SAS helps you turn data into insights.
-                </p>
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="row text-center py-5">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <img src="images/R.png">
+                    <span class="text-primary p-2">R</span>
+                    <p>
+                        R is a free software environment for statistical computing & graphics. It compiles and runs on a wide variety of UNIX platforms, Windows and MacOS. R is a language & environment for statistical computing & graphics.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <img src="images/pythan.png">
+                    <span class="text-primary p-2">Python</span>
+                    <p>
+                        Python is a high-level,interpreted,interactive & object-oriented scripting language.It is designed to be highly readable.It uses English keywords frequently where as other languages use punctuation,& it has fewer syntactical constructions than other languages.     
+                        </p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <img src="images/rapid.png">
+                    <span class="text-primary p-2">Rapid Miner</span>
+                    <p>
+                        RapidMiner Studio is a powerful visual design environment for rapidly building complete predictive analytic workflows. This all-in-one tool features hundreds of pre-defined data preparation & machine learning algorithms.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <img src="images/sas_icon.png">
+                    <span class="text-primary p-2">SAS</span>
+                    <p>
+                        Statistical Analysis System is a software suite developed by SAS Institute for advanced analytics, multivariate analyses, business intelligence, data management, and predictive analytics. SAS helps you turn data into insights.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
     <section id="courses">
-        <div class="container mb-5 pb-5">
+        <div class="container pb-5">
             <h1 class="text-white text-center pt-5">Our Courses</h1>
             <p class="text-center text-white">We work on the following services and also provide Certificate and Diploma training for the same as </p>
-            <div class="row text-center py-3">
-                <div class="col-md-4">
-                    <div class="card text-primary border-primary mb-3">
-                        <div class="h5 py-3 card-header bg-primary border-primary text-white">Data Science</div>
-                        <div class="card-body bg-transparent border-primary text-primary">
-                            <img class="img-fluid" src="images/data_science.png">
-                            <p class="card-text my-2">Data science, also known as data-driven science, is an interdisciplinary field about scientific methods, processes and systems to extract knowledge or insights from data in various forms, either structured or unstructured, similar to data mining.</p>
-                        </div>
-                        <ul class="list-group list-group-flush text-primary bg-transparent border-primary">
-                            <li class="list-group-item">Duration: 3.5 Months</li>
-                            <li class="list-group-item">Saturday & Sunday: 3 hours </li>
-                        </ul>
-                        <div class="card-footer bg-primary border-primary text-white">
-                            <a href="#" type="button" class="btn btn-warning">Click Syllabus</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-primary border-primary mb-3">
-                        <div class="h5 py-3 card-header bg-primary border-primary text-white">Business Analytics</div>
-                        <div class="card-body bg-transparent border-primary text-primary">
-                            <img class="img-fluid" src="images/business_analyst.png">
-                            <p class="card-text my-2">Business analytics (BA) is the practice of iterative, methodical exploration of an organization's data, with an emphasis on statistical analysis. Business analytics is used by companies committed to data-driven decision-making.</p>
-                        </div>
-                        <ul class="list-group list-group-flush text-primary bg-transparent border-primary">
-                            <li class="list-group-item">Duration: 3.5 Months</li>
-                            <li class="list-group-item">Saturday & Sunday: 3 hours </li>
-                        </ul>
-                        <div class="card-footer bg-primary border-primary text-white">
-                            <a href="#" type="button" class="btn btn-warning">Click Syllabus</a>
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <div class="row text-center py-3">
+                    <div class="col-md-4">
+                        <div class="card text-primary border-primary mb-3">
+                            <div class="h5 py-3 card-header bg-primary border-primary text-white">Data Science</div>
+                            <div class="card-body bg-transparent border-primary text-primary">
+                                <img class="img-fluid" src="images/data_science.png">
+                                <p class="card-text my-2">Data science, also known as data-driven science, is an interdisciplinary field about scientific methods, processes and systems to extract knowledge or insights from data in various forms, either structured or unstructured, similar to data mining.</p>
+                            </div>
+                            <ul class="list-group list-group-flush text-primary bg-transparent border-primary">
+                                <li class="list-group-item">Duration: 3.5 Months</li>
+                                <li class="list-group-item">Saturday & Sunday: 3 hours </li>
+                            </ul>
+                            <div class="card-footer bg-primary border-primary text-white">
+                                <a href="data_science.html" type="button" class="btn btn-warning">Click Syllabus</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-primary border-primary mb-3">
-                        <div class="h5 py-3 card-header bg-primary border-primary text-white">Statistical Analysis(R,SAS)</div>
-                        <div class="card-body bg-transparent border-primary text-primary">
-                            <img class="img-fluid" src="images/statistical.png">
-                            <p class="card-text my-2">Statistical analysis is a component of data analytics. In the context of business intelligence (BI), statistical analysis involves collecting and scrutinizing every data sample in a set of items from which samples can be drawn.</p>
+                    <div class="col-md-4">
+                        <div class="card text-primary border-primary mb-3">
+                            <div class="h5 py-3 card-header bg-primary border-primary text-white">Business Analytics</div>
+                            <div class="card-body bg-transparent border-primary text-primary">
+                                <img class="img-fluid" src="images/business_analyst.png">
+                                <p class="card-text my-2">Business analytics (BA) is the practice of iterative, methodical exploration of an organization's data, with an emphasis on statistical analysis. Business analytics is used by companies committed to data-driven decision-making.</p>
+                            </div>
+                            <ul class="list-group list-group-flush text-primary bg-transparent border-primary">
+                                <li class="list-group-item">Duration: 3.5 Months</li>
+                                <li class="list-group-item">Saturday & Sunday: 3 hours </li>
+                            </ul>
+                            <div class="card-footer bg-primary border-primary text-white">
+                                <a href="business.html" type="button" class="btn btn-warning">Click Syllabus</a>
+                            </div>
                         </div>
-                        <ul class="list-group list-group-flush text-primary bg-transparent border-primary">
-                            <li class="list-group-item">Duration: 3.5 Months</li>
-                            <li class="list-group-item">Saturday & Sunday: 3 hours </li>
-                        </ul>
-                        <div class="card-footer bg-primary border-primary text-white">
-                            <a href="#" type="button" class="btn btn-warning">Click Syllabus</a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-primary border-primary mb-3">
+                            <div class="h5 py-3 card-header bg-primary border-primary text-white">SAS Programming </div>
+                            <div class="card-body bg-transparent border-primary text-primary">
+                                <img class="img-fluid" src="images/sas_icon.png">
+                                <p class="card-text my-2">
+
+                                    SAS is a leader in business analytics. Through innovative analytics it caters to business intelligence and data management software and services. SAS transforms data into insight which can give a fresh perspective on business.</p>
+                            </div>
+                            <ul class="list-group list-group-flush text-primary bg-transparent border-primary">
+                                <li class="list-group-item">Duration: 3.5 Months</li>
+                                <li class="list-group-item">Saturday & Sunday: 3 hours </li>
+                            </ul>
+                            <div class="card-footer bg-primary border-primary text-white">
+                                <a href="sas.html" type="button" class="btn btn-warning">Click Syllabus</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row text-center py-3">
-                <div class="col-md-4">
-                    <div class="card text-primary border-primary mb-3">
-                        <div class="h5 py-3 card-header bg-primary border-primary text-white">Machine Learning</div>
-                        <div class="card-body bg-transparent border-primary text-primary">
-                            <img class="img-fluid" src="images/machine_learning.png">
-                            <p class="card-text my-2">Machine learning is the sub-field of computer science that, according to Arthur Samuel in 1959, gives "computers the ability to learn without being explicitly programmed."</p>
-                        </div>
-                        <ul class="list-group list-group-flush text-primary bg-transparent border-primary">
-                            <li class="list-group-item">Duration: 3.5 Months</li>
-                            <li class="list-group-item">Saturday & Sunday: 3 hours </li>
-                        </ul>
-                        <div class="card-footer bg-primary border-primary text-white">
-                            <a href="#" type="button" class="btn btn-warning">Click Syllabus</a>
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <div class="row text-center py-3">
+                    <div class="col-md-4">
+                        <div class="card text-primary border-primary mb-3">
+                            <div class="h5 py-3 card-header bg-primary border-primary text-white">Machine Learning</div>
+                            <div class="card-body bg-transparent border-primary text-primary">
+                                <img class="img-fluid" src="images/machine_learning.png">
+                                <p class="card-text my-2">Machine learning is the sub-field of computer science that, according to Arthur Samuel in 1959, gives "computers the ability to learn without being explicitly programmed."</p>
+                            </div>
+                            <ul class="list-group list-group-flush text-primary bg-transparent border-primary">
+                                <li class="list-group-item">Duration: 3.5 Months</li>
+                                <li class="list-group-item">Saturday & Sunday: 3 hours </li>
+                            </ul>
+                            <div class="card-footer bg-primary border-primary text-white">
+                                <a href="Machine.html" type="button" class="btn btn-warning">Click Syllabus</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-primary border-primary mb-3">
-                        <div class="h5 py-3 card-header bg-primary border-primary text-white">Marketing Analytics</div>
-                        <div class="card-body bg-transparent border-primary text-primary">
-                            <img class="img-fluid" src="images/marketing_analyst.png">
-                            <p class="card-text my-2">Marketing analytics is the practice of measuring, managing and analyzing marketing performance to maximize its effectiveness and optimize return on investment (ROI).
+                    <div class="col-md-4">
+                        <div class="card text-primary border-primary mb-3">
+                            <div class="h5 py-3 card-header bg-primary border-primary text-white">Marketing Analytics</div>
+                            <div class="card-body bg-transparent border-primary text-primary">
+                                <img class="img-fluid" src="images/marketing_analyst.png">
+                                <p class="card-text my-2">Marketing analytics is the practice of measuring, managing and analyzing marketing performance to maximize its effectiveness and optimize return on investment (ROI).
 
-                            </p>
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush text-primary bg-transparent border-primary">
+                                <li class="list-group-item">Duration: 3.5 Months</li>
+                                <li class="list-group-item">Saturday & Sunday: 3 hours </li>
+                            </ul>
+                            <div class="card-footer bg-primary border-primary text-white">
+                                <a href="Marketing.html" type="button" class="btn btn-warning">Click Syllabus</a>
+                            </div>
                         </div>
-                        <ul class="list-group list-group-flush text-primary bg-transparent border-primary">
-                            <li class="list-group-item">Duration: 3.5 Months</li>
-                            <li class="list-group-item">Saturday & Sunday: 3 hours </li>
-                        </ul>
-                        <div class="card-footer bg-primary border-primary text-white">
-                            <a href="#" type="button" class="btn btn-warning">Click Syllabus</a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-primary border-primary mb-3">
+                            <div class="h5 py-3 card-header bg-primary border-primary text-white">R Programming </div>
+                            <div class="card-body bg-transparent border-primary text-primary">
+                                <img class="img-fluid" src="images/R.png">
+                                <p class="card-text my-2">R is an open source programming language and software environment for statistical computing and graphics that is supported by the R Foundation for Statistical Computing.</p>
+                            </div>
+                            <ul class="list-group list-group-flush text-primary bg-transparent border-primary">
+                                <li class="list-group-item">Duration: 3.5 Months</li>
+                                <li class="list-group-item">Saturday & Sunday: 3 hours </li>
+                            </ul>
+                            <div class="card-footer bg-primary border-primary text-white">
+                                <a href="r.html" type="button" class="btn btn-warning">Click Syllabus</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-primary border-primary mb-3">
-                        <div class="h5 py-3 card-header bg-primary border-primary text-white">Programming (R,SAS)</div>
-                        <div class="card-body bg-transparent border-primary text-primary">
-                            <img class="img-fluid" src="images/programming.png">
-                            <p class="card-text my-2">R is an open source programming language and software environment for statistical computing and graphics that is supported by the R Foundation for Statistical Computing.</p>
+            </div>
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <div class="row pt-3 text-center">
+                    <div class="col-md-4">
+                        <div class="card text-primary border-primary mb-3">
+                            <div class="h5 py-3 card-header bg-primary border-primary text-white">Python</div>
+                            <div class="card-body bg-transparent border-primary text-primary">
+                                <img class="img-fluid" src="images/pythan.png">
+                                <p class="card-text my-2">
+                                    Python is a high-level,interpreted,interactive & object-oriented scripting language.It is designed to be highly readable.It uses English keywords frequently where as other languages use punctuation,& it has fewer syntactical constructions than other languages.</p>
+                            </div>
+                            <ul class="list-group list-group-flush text-primary bg-transparent border-primary">
+                                <li class="list-group-item">Duration: 3.5 Months</li>
+                                <li class="list-group-item">Saturday & Sunday: 3 hours </li>
+                            </ul>
+                            <div class="card-footer bg-primary border-primary text-white">
+                                <a href="pythan.html" type="button" class="btn btn-warning">Click Syllabus</a>
+                            </div>
                         </div>
-                        <ul class="list-group list-group-flush text-primary bg-transparent border-primary">
-                            <li class="list-group-item">Duration: 3.5 Months</li>
-                            <li class="list-group-item">Saturday & Sunday: 3 hours </li>
-                        </ul>
-                        <div class="card-footer bg-primary border-primary text-white">
-                            <a href="#" type="button" class="btn btn-warning">Click Syllabus</a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-primary border-primary mb-3">
+                            <div class="h5 py-3 card-header bg-primary border-primary text-white">Data Analytics (R, Python, Azure ML Studio, RapidMiner)
+</div>
+                            <div class="card-body bg-transparent border-primary text-primary">
+                                <img class="img-fluid" src="images/statistical.png">
+                                <p class="card-text my-2">Data analysts collect, process and perform statistical analyses of data. In the context of business intelligence (BI), statistical analysis involves collecting and scrutinizing every data sample in a set of items from which samples can be drawn.</p>
+                            </div>
+                            <ul class="list-group list-group-flush text-primary bg-transparent border-primary">
+                                <li class="list-group-item">Duration: 3.5 Months</li>
+                                <li class="list-group-item">Saturday & Sunday: 3 hours </li>
+                            </ul>
+                            <div class="card-footer bg-primary border-primary text-white">
+                                <a href="data.html" type="button" class="btn btn-warning">Click Syllabus</a>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="certify" class="m-5">
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/certify.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 text-center pt-3 px-3">
+                        <h1 class="m-3 text-primary"><strong>"PG Diploma in Data Science"</strong></h1>
+                        <p class="lead">
+                            For more details about the Diploma in Advanced Data Secience and certification
+                        </p>
+                        <p class="text-primary h6">Download syllbus pdf</p>
+						<a href="Post%20Graduate%20Diploma.pdf" target="_blank"><i class="text-primart fas fa-file-pdf fa-5x"></i></a>
+                        <p class="m-3">
+                            <a href="contact.html" class="btn btn-primary btn-lg">Contact US</a>
+                         </p>   
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <footer>
-        <div class="container">
-            <div class="row pt-4 text-center">
-                <div class="col-md-4">
-                    <h3 class="text-white pt-2">Links</h3>
-                    <ul style="list-style-type: none">
-                        <li><a class="dropdown-item text-white" href="#">Home</a></li>
-                        <li><a class="dropdown-item text-white" href="#">Courses</a></li>
-                        <li><a class="dropdown-item text-white" href="#">About US</a></li>
-                        <li><a class="dropdown-item text-white" href="#">Contact US</a></li>
-                    </ul>
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="container">
+                <div class="row pt-4">
+                    <div class="col-12 col-sm-6 col-md-2 text-center">
+                        <h3 class="text-white pt-3 ml-4">Links</h3>
+                        <ul style="list-style-type: none">
+                            <li><a class="dropdown-item text-white" href="index.html">Home</a></li>
+                            <li><a class="dropdown-item text-white" href="index.html#courses">Courses</a></li>
+                            <li><a class="dropdown-item text-white" href="about.html">About US</a></li>
+                            <li><a class="dropdown-item text-white" href="contact.html">Contact US</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 text-center">
+                        <h3 class="text-white pt-2 ml-3">Courses</h3>
+                        <ul style="list-style-type: none">
+                            <li><a class="dropdown-item text-white" href="data_science.html">Data Science</a></li>
+                            <li><a class="dropdown-item text-white" href="Machine.html">Machine Learning</a></li>
+                            <li><a class="dropdown-item text-white" href="business.html">Business Analytics</a></li>
+                            <li><a class="dropdown-item text-white" href="Marketing.html">Marketing Analytics</a></li>
+                            <li><a class="dropdown-item text-white" href="data.html">Data Analysis(R,SAS)</a></li>
+                            <li><a class="dropdown-item text-white" href="r.html">Programming (R,SAS)</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 text-center">
+                        <h3 class="text-white pt-2">Contact Details</h3>
+                        <ul style="list-style-type: none">
+                            <li class="text-white p-2">
+                                <i class="fas fa-phone-square text-white"></i> (+91) 866 969 4488
+                            </li>
+                            <li class="text-white p-2">
+                                <i class="fas fa-envelope text-white"></i> enquiry2ianalyst@gmail.com
+                            </li>
+                            <li class="text-white p-2">
+                                <i class="fas fa-map-marker-alt text-white"></i> Flat No. 106, Vrundavan Society,
+                                <br />Opp. Polaris Health Care, Datta Mandir Road, Wakad-57
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 text-center">
+                        <h3 class="text-white pt-2">Share this page</h3>
+                        <ul class="list-inline m-5">
+                            <li class="list-inline-item p-2"><i class="text-white fab fa-facebook-square fa-2x"></i></li>
+                            <li class="list-inline-item p-2"><i class="text-white fab fa-linkedin fa-2x"></i></li>
+                            <li class="list-inline-item p-2"><i class="text-white fab fa-twitter-square fa-2x"></i></li>
+                            <li class="list-inline-item p-2"><i class="text-white fab fa-instagram fa-2x"></i></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h3 class="text-white pt-2">Courses</h3>
-                    <ul style="list-style-type: none">
-                        <li><a class="dropdown-item text-white" href="#">Data Science</a></li>
-                        <li><a class="dropdown-item text-white" href="#">Machine Learning</a></li>
-                        <li><a class="dropdown-item text-white" href="#">Business Analytics</a></li>
-                        <li><a class="dropdown-item text-white" href="#">Marketing Analytics</a></li>
-                        <li><a class="dropdown-item text-white" href="#">Statistical Analysis(R,SAS)</a></li>
-                        <li><a class="dropdown-item text-white" href="#">Programming (R,SAS)</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h3 class="text-white pt-2">Share this page</h3>
-                    <ul style="list-style-type: none">
-                        <li class="text-white"><i class="fas fa-phone-square text-white"></i> (+91) 866 969 4488</li>
-                        <li class="text-white"><i class="fas fa-envelope text-white"></i> enquiry2ianalyst@gmail.com</li>
-                        <li class="text-white"><i class="fas fa-map-marker-alt text-white"></i> Flat No. 106, Vrundavan Society,Opp. Polaris
-                            <br />Health Care, Datta Mandir Road, Wakad-57</li>
-                    </ul>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><i class="text-white fab fa-facebook-square fa-2x"></i></li>
-                        <li class="list-inline-item"><i class="text-white fab fa-linkedin fa-2x"></i></li>
-                        <li class="list-inline-item"><i class="text-white fab fa-twitter-square fa-2x"></i></li>
-                        <li class="list-inline-item"><i class="text-white fab fa-instagram fa-2x"></i></li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <div class="row pb-3">
-                <div class="col-md-12 text-center text-white">
-                    &copy;Copyrights 2017 Myclan services Pvt Ltd.
+                <hr>
+                <div class="row pb-3">
+                    <div class="col-md-12 text-center text-white">
+                        &copy;Copyrights 2017 Myclan services Pvt Ltd.
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+    <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center">Demo Registration</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-12 m-2">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="col-12 m-2">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col-12 m-2">
+                                <input type="text" class="form-control" placeholder="Contact Number">
+                            </div>
+                            <div class="col-12 m-2">
+                                <input type="text" class="form-control" placeholder="Your Pune Location">
+                            </div>
+                            <div class="col-12 m-2">
+                                <select class="form-control">
+                                    <option value="">Select Course</option>
+                                    <option value="Data Analystics">Data Analystics</option>
+                                    <option value="Data Science">Data Science</option>
+                                    <option value="Machin Learning">Machin Learning</option>
+                                    <option value="Market Analytics">Market Analytics</option>
+                                    <option value="Business Analytics">Business Analytics</option>
+                                    <option value="R Programmimg">R Programmimg</option>
+                                    <option value="SAS Programming">SAS Programming</option>
+                                    <option value="Python">Python</option>
+                                    <option value="Statistical Analysis(R,SAS)">Statistical Analysis(R,SAS)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5b692a5de21878736ba2b025/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5b692a5de21878736ba2b025/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script>
-    $(".fa-comment-o").click(function() {
-        $(".card-chat").toggle();
-    })
     $(window).scroll(function() {
         if ($(document).scrollTop() > 450) {
             $(".custom-nav1").addClass("shrink");
@@ -270,6 +404,10 @@ s0.parentNode.insertBefore(s1,s0);
             $(".custom-nav1").removeClass("shrink");
         }
     })
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
 </script>
 
 </html>
